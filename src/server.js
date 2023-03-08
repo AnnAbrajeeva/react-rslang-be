@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 const { PORT, MONGO_CONNECTION_STRING } = require('./common/config');
 const app = require('./app');
 
-mongoose.connect(MONGO_CONNECTION_STRING, {
+mongoose.connect('mongodb+srv://anuta040786:040786@cluster0.ftedtpn.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
